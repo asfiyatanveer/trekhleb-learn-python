@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python 🐍</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #306998;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #ffd43b;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #306998;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #306998;
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        code {
+            display: block;
+            background: #222;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: Consolas, monospace;
+            margin: 10px 0;
+        }
+
+        .tip {
+            background: #fff3cd;
+            border-left: 5px solid #ffd43b;
+            padding: 12px;
+            margin-top: 15px;
+        }
+
+        button {
+            background: #306998;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #24527a;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        #result {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #306998;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐍 Learn Python</h1>
+        <p>A beginner-friendly guide to Python programming</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#basics">Basics</a>
+        <a href="#variables">Variables</a>
+        <a href="#if">If Statements</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>🐍 What is Python?</h2>
+
+            <p>
+                Python is a programming language used to tell computers
+                what to do. It is popular because its code is relatively
+                easy for beginners to read and write.
+            </p>
+
+            <p>
+                Python can be used to create websites, programs,
+                data projects, artificial intelligence and much more.
+            </p>
+
+            <div class="tip">
+                💡 Tip: Programming is about giving a computer instructions
+                in a language it can understand.
+            </div>
+        </section>
+
+
+        <!-- BASICS -->
+        <section id="basics">
+            <h2>📚 Lesson 1: The print() Function</h2>
+
+            <p>
+                The <strong>print()</strong> function tells Python to
+                display something on the screen.
+            </p>
+
+            <code>
+print("Hello, world!")
+            </code>
+
+            <p>This would display:</p>
+
+            <code>
+Hello, world!
+            </code>
+
+            <h3>Try another example:</h3>
+
+            <code>
+print("I am learning Python!")<br>
+print("Python is fun!")
+            </code>
+        </section>
+
+
+        <!-- VARIABLES -->
+        <section id="variables">
+            <h2>📦 Lesson 2: Variables</h2>
+
+            <p>
+                A variable is like a box that stores information.
+            </p>
+
+            <code>
+name = "Alex"<br>
+age = 12
+            </code>
+
+            <p>
+                The variable <strong>name</strong> stores "Alex", while
+                <strong>age</strong> stores the number 12.
+            </p>
+
+            <code>
+name = "Alex"<br>
+print(name)
+            </code>
+
+            <p>The result would be:</p>
+
+            <code>
+Alex
+            </code>
+        </section>
+
+
+        <!-- INPUT -->
+        <section>
+            <h2>⌨️ Lesson 3: User Input</h2>
+
+            <p>
+                Python can ask the user for information using
+                <strong>input()</strong>.
+            </p>
+
+            <code>
+name = input("What is your name?")<br>
+print("Hello " + name)
+            </code>
+
+            <p>
+                If the user enters <strong>Sam</strong>, the program
+                will say:
+            </p>
+
+            <code>
+Hello Sam
+            </code>
+        </section>
+
+
+        <!-- IF STATEMENTS -->
+        <section id="if">
+            <h2>🔀 Lesson 4: If Statements</h2>
+
+            <p>
+                An <strong>if statement</strong> allows Python to make
+                decisions.
+            </p>
+
+            <code>
+age = 12<br><br>
+
+if age >= 10:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("You are 10 or older!")
+            </code>
+
+            <p>
+                Python checks whether the condition is true.
+                If it is true, the indented code runs.
+            </p>
+
+            <div class="tip">
+                💡 Remember: Python uses indentation to show which
+                instructions belong inside an if statement.
+            </div>
+        </section>
+
+
+        <!-- LOOPS -->
+        <section>
+            <h2>🔁 Lesson 5: Loops</h2>
+
+            <p>
+                Loops allow you to repeat instructions.
+            </p>
+
+            <code>
+for i in range(5):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("Hello!")
+            </code>
+
+            <p>
+                This prints "Hello!" five times.
+            </p>
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz">
+            <h2>📝 Python Quiz</h2>
+
+            <div class="question">
+                <p><strong>1. What does print() do?</strong></p>
+
+                <label>
+                    <input type="radio" name="q1" value="wrong">
+                    Deletes information
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="correct">
+                    Displays something on the screen
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q1" value="wrong">
+                    Turns off Python
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>2. What is a variable?</strong></p>
+
+                <label>
+                    <input type="radio" name="q2" value="correct">
+                    A place that stores information
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q2" value="wrong">
+                    A computer screen
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q2" value="wrong">
+                    A type of keyboard
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>3. Which function gets information from the user?</strong></p>
+
+                <label>
+                    <input type="radio" name="q3" value="wrong">
+                    print()
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q3" value="correct">
+                    input()
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q3" value="wrong">
+                    ask()
+                </label>
+            </div>
+
+
+            <div class="question">
+                <p><strong>4. What can a loop do?</strong></p>
+
+                <label>
+                    <input type="radio" name="q4" value="correct">
+                    Repeat instructions
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q4" value="wrong">
+                    Delete Python
+                </label><br>
+
+                <label>
+                    <input type="radio" name="q4" value="wrong">
+                    Change your computer
+                </label>
+            </div>
+
+
+            <button onclick="checkQuiz()">Check My Answers</button>
+
+            <p id="result"></p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>🐍 Learn Python | Made for beginner programmers</p>
+    </footer>
+
+
+    <script>
+        function checkQuiz() {
+
+            let questions = document.querySelectorAll(
+                'input[type="radio"]:checked'
+            );
+
+            let score = 0;
+
+            questions.forEach(function(answer) {
+
+                if (answer.value === "correct") {
+                    score++;
+                }
+
+            });
+
+            let result = document.getElementById("result");
+
+            if (questions.length < 4) {
+                result.textContent =
+                    "Please answer all 4 questions!";
+                result.style.color = "orange";
+            }
+
+            else {
+                result.textContent =
+                    "You scored " + score + " out of 4! 🎉";
+
+                if (score === 4) {
+                    result.style.color = "green";
+                }
+
+                else {
+                    result.style.color = "#306998";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
